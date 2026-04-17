@@ -10,7 +10,7 @@
     "description": "A cozy apartment located in the heart of New York, perfect for a weekend getaway.",
     "rooms": 2,
     "maxGuests": 4,
-    "lat": 40.7128,
+    "lat": 45.7128,
     "lng": -74.0060,
     "reviews": [
       { "id": 1, "reviewername": "John Doe", "reviewstars": 4.5, "reviewtext": "Great place to stay! Very clean and close to everything.", "reviewdate": "2024-01-15" },
