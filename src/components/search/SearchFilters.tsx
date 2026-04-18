@@ -1,11 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { useSearch } from "@/context/SearchContext";
 
 export default function SearchFilters() {
-    const [minPrice, setMinPrice] = useState(0);
-    const [maxPrice, setMaxPrice] = useState(1000);
-    const [rooms, setRooms] = useState(1);
+    const { minPrice, maxPrice, rooms, setMinPrice, setMaxPrice, setRooms } = useSearch();
     return (
         <div>
             <label>Min Price:</label>

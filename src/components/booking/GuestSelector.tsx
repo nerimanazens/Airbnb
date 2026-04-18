@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
 import { Plus,Minus } from 'lucide-react';
+import { useBooking } from "@/context/BookingContext";
 
 export default function GuestSelector() {
-    const [adults, setAdults] = useState(1);
-    const [children, setChildren] = useState(0);
+    const { adults, kids, setAdults, setKids } = useBooking();
     return (
         <div>
             <p>Adults</p>
@@ -16,11 +16,11 @@ export default function GuestSelector() {
                 <Plus />
             </button>
             <p>Children</p>
-            <button className="mr-2 bg-amber-100 text-2xl rounded-2xl" onClick={() => setChildren(Math.max(0, children - 1))}>
+            <button className="mr-2 bg-amber-100 text-2xl rounded-2xl" onClick={() => setKids(Math.max(0, kids - 1))}>
                 <Minus />
             </button>
-            <span>{children}</span>
-            <button className="ml-2 bg-amber-100 text-2xl rounded-2xl" onClick={() => setChildren(children + 1)}>
+            <span>{kids}</span>
+            <button className="ml-2 bg-amber-100 text-2xl rounded-2xl" onClick={() => setKids(kids + 1)}>
                 <Plus />
             </button>
         </div>

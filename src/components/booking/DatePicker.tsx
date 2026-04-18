@@ -1,10 +1,8 @@
-"use client";
-import { useState } from "react";
+
+import { useBooking } from "@/context/BookingContext";
 
 export default function DataPicker() {
-    const [checkIn, setCheckIn] = useState("");
-    const [checkOut, setCheckOut] = useState("");
-
+    const { checkIn, checkOut, setCheckIn, setCheckOut } = useBooking();
     return (
         <form className="flex flex-col">
             <label>Check-in:</label>

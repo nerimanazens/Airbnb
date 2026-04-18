@@ -1,18 +1,25 @@
+import properties  from "@/data.json";
+import { useSearch } from "@/context/SearchContext";
 import PropertyCard from "@/components/property/PropertyCard";
 
-type Property = {
-  id: number;
-  city: string;
-  price: number;
-  days: number;
-  image: string;
-  rating: number;
-}
+export default function SearchResults() {
+  const { minPrice, maxPrice, rooms } = useSearch();
 
-export default function SearchResults({ properties }: { properties: Property[] }) {
+  const filteredProperties = properties.filter((p) => {
+    return (
+      p.price >= minPrice &&
+      p.price <= maxPrice &&
+      p.rooms >= rooms
+    );
+  });
+
+  if (filteredProperties.length === 0) {
+    return <p>No results found</p>;
+  }
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {properties.map((property) => (
+      {filteredProperties.map((property) => (
         <PropertyCard
           key={property.id}
           city={property.city}

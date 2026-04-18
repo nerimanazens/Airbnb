@@ -3,6 +3,7 @@
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import properties from "@/data.json";
+import { useSearch } from "@/context/SearchContext";
 import L from "leaflet";
 
 const icon = L.icon({
@@ -11,13 +12,33 @@ const icon = L.icon({
 });
 
 export default function PropertyMap() {
+  const { minPrice, maxPrice, rooms } = useSearch();
+
+  const filtered = properties.filter((p) => {
     return (
-        <MapContainer center={[properties[0].lat, properties[0].lng]} zoom={1} style={{ height: "400px", width: "400px" }}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' />
-            <Marker position={[properties[0].lat, properties[0].lng]} icon={icon} />
-            <Marker position={[properties[1].lat, properties[1].lng]} icon={icon} />
-            <Marker position={[properties[2].lat, properties[2].lng]} icon={icon} />
-        </MapContainer>
+      p.price >= minPrice &&
+      p.price <= maxPrice &&
+      p.rooms >= rooms
     );
+  });
+
+  return (
+    <MapContainer
+      center={[filtered[0]?.lat || 0, filtered[0]?.lng || 0]}
+      zoom={2}
+      style={{ height: "400px", width: "100%" }}
+    >
+      <TileLayer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+
+      {filtered.map((p) => (
+        <Marker
+          key={p.id}
+          position={[p.lat, p.lng]}
+          icon={icon}
+        />
+      ))}
+    </MapContainer>
+  );
 }
