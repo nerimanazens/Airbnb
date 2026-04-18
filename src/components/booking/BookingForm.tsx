@@ -1,11 +1,11 @@
 "use client";
-import { useState } from "react";
 import GuestSelector from "@/components/booking/GuestSelector";
 import DatePicker from "@/components/booking/DatePicker";
 import PaymentForm from "@/components/booking/PaymentForm";
+import { useBookingForm } from "@/hooks/useBookingForm";
 
 export default function BookingForm() {
-    const [currentStep, setCurrentStep] = useState(1);
+    const { currentStep, nextStep, prevStep } = useBookingForm();
 
     return (
         <div>
@@ -17,14 +17,11 @@ export default function BookingForm() {
             {currentStep === 3 && <PaymentForm />}
 
             {currentStep > 1 && (
-                <button className="bg-gray-500 text-white px-2 rounded" onClick={() => setCurrentStep((prev) => prev - 1)}>Back</button>
-
+                <button className="bg-gray-500 text-white px-2 rounded" onClick={prevStep}>Back</button>
             )}
             {currentStep < 3 && (
-                <button className="bg-green-500 text-white px-2 rounded ml-2" onClick={() => setCurrentStep((prev) => prev + 1)}>Next</button>
+                <button className="bg-green-500 text-white px-2 rounded ml-2" onClick={nextStep}>Next</button>
             )}
-
-
         </div>
     );
 } 

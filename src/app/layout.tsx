@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { BookingProvider } from "@/context/BookingContext";
 import { SearchProvider } from "@/context/SearchContext";
+import { WishlistProvider } from "@/context/WishlistContext";
 
 
 
@@ -23,15 +24,15 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <ThemeProvider>
-          <ThemeProvider>
+          <WishlistProvider>
             <SearchProvider>
               <BookingProvider>
                 {children}
               </BookingProvider>
             </SearchProvider>
-          </ThemeProvider>
+          </WishlistProvider>
         </ThemeProvider>
-      </body>
+      </body> 
 
     </html>
   );

@@ -1,17 +1,21 @@
-import properties  from "@/data.json";
+"use client";
+import { useMemo } from "react";
+import properties from "@/data.json";
 import { useSearch } from "@/context/SearchContext";
 import PropertyCard from "@/components/property/PropertyCard";
 
 export default function SearchResults() {
   const { minPrice, maxPrice, rooms } = useSearch();
 
-  const filteredProperties = properties.filter((p) => {
-    return (
-      p.price >= minPrice &&
-      p.price <= maxPrice &&
-      p.rooms >= rooms
-    );
-  });
+  const filteredProperties = useMemo(() => {
+    return properties.filter((p) => {
+      return (
+        p.price >= minPrice &&
+        p.price <= maxPrice &&
+        p.rooms >= rooms
+      );
+    });
+  }, [minPrice, maxPrice, rooms]);
 
   if (filteredProperties.length === 0) {
     return <p>No results found</p>;
