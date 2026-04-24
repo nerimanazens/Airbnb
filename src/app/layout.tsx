@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/context/ThemeContext";
 import { BookingProvider } from "@/context/BookingContext";
 import { SearchProvider } from "@/context/SearchContext";
 import { WishlistProvider } from "@/context/WishlistContext";
-
+import Navbar from "@/components/page/Navbar";
 
 
 export const metadata: Metadata = {
@@ -27,6 +27,7 @@ export default function RootLayout({
           <WishlistProvider>
             <SearchProvider>
               <BookingProvider>
+                <Navbar />
                 {children}
               </BookingProvider>
             </SearchProvider>

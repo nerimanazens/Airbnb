@@ -1,5 +1,4 @@
 "use client";
-import { useTheme } from "@/context/ThemeContext";
 import properties from "@/data.json";
 import PropertyGallery from "@/components/property/PropertyGallery";
 import PropertyDetails from "@/components/property/PropertyDetails";
@@ -10,20 +9,15 @@ import SearchFilters from "@/components/search/SearchFilters";
 import SearchResults from "@/components/search/SearchResults";
 import MapViews from "@/components/search/MapViews";
 import Wishlist from "@/components/user/Wishlist";
+import Navbar from "@/components/page/Navbar";
 
 export default function Home() {
-  const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className={`${theme === "dark" ? "bg-gray-900 text-white" : "bg-white text-black"} min-h-screen p-6`}>
+    <div className={`min-h-screen p-6`}>
+
+    
       
-      {/* Header */}
-      <div className="flex justify-between items-center mb-8">
-        <h1 className="text-3xl font-bold text-red-500">airbnb</h1>
-        <button onClick={toggleTheme} className="p-2 rounded bg-gray-200 dark:bg-gray-700">
-          {theme === "light" ? "Dark" : "Light"}
-        </button>
-      </div>
 
       {/* Search */}
       <div className="mb-8">

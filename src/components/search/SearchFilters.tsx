@@ -7,14 +7,14 @@ export default function SearchFilters() {
     const { minPrice, maxPrice, rooms, setMinPrice, setMaxPrice, setRooms } = useSearch();
     return (
         <div>
-            <label>Min Price:</label>
-            <input type="number" value={minPrice} onChange={(e) => setMinPrice(Number(e.target.value))} />
+            <label className="text-xl font-bold">Min Price:</label>
+            <input type="text" value={minPrice} onChange={(e) => setMinPrice(Number(e.target.value))} className="border h-8 rounded-2xl border-gray-400 p-4"/>
 
-            <label>Max Price:</label>
-            <input type="number" value={maxPrice} onChange={(e) => setMaxPrice(Number(e.target.value))} />
+            <label className="text-xl font-bold">Max Price:</label>
+            <input type="text" value={maxPrice} onChange={(e) => setMaxPrice(Number(e.target.value))} className="border h-8 rounded-2xl border-gray-400 p-4"/>
 
-            <label>Rooms:</label>
-            <input type="number" value={rooms} onChange={(e) => setRooms(Number(e.target.value))} />
+            <label className="text-xl font-bold">Rooms:</label>
+            <input type="text" value={rooms} onChange={(e) => setRooms(Number(e.target.value))} className="border h-8 rounded-2xl border-gray-400 p-4   "/>
         </div>
     )
 }
