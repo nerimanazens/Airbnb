@@ -15,10 +15,11 @@ const PropertyCard = memo(function PropertyCard({ id, city, price, days, image, 
       addToWishlist(id);
     }
     setIsFavorite((prev) => !prev);
-  }, [id,isFavorite, addToWishlist, removeFromWishlist]);
+  }, [id, isFavorite, addToWishlist, removeFromWishlist]);
 
 
   return (
+
     <div className="max-w-75 rounded-lg relative">
       <img src={image} alt="Description" className="rounded-4xl" />
       <button onClick={toggleFavorite} className="absolute top-6 right-6">
@@ -28,6 +29,7 @@ const PropertyCard = memo(function PropertyCard({ id, city, price, days, image, 
       <span className="ml-2 font-bold text-[#656464]">{price}$ per {days} nights</span>
       <span className="ml-2">Rating: {rating}/5</span>
     </div>
+
   );
 });
 

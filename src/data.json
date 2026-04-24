@@ -13,11 +13,26 @@
     "lat": 45.7128,
     "lng": -74.0060,
     "reviews": [
-      { "id": 1, "reviewername": "John Doe", "reviewstars": 4.5, "reviewtext": "Great place to stay! Very clean and close to everything.", "reviewdate": "2024-01-15" },
-      { "id": 2, "reviewername": "Jane Smith", "reviewstars": 5, "reviewtext": "Amazing apartment, would definitely come back!", "reviewdate": "2024-02-20" }
+      {
+        "id": 1,
+        "reviewername": "John Doe",
+        "reviewstars": 4.5,
+        "reviewtext": "Great place to stay! Very clean and close to everything.",
+        "reviewdate": "2024-01-15"
+      },
+      {
+        "id": 2,
+        "reviewername": "Jane Smith",
+        "reviewstars": 5,
+        "reviewtext": "Amazing apartment, would definitely come back!",
+        "reviewdate": "2024-02-20"
+      }
     ],
-    "images": ["image.png", "image2.webp", "image3.webp"]
-
+    "images": [
+      "image.png",
+      "image2.webp",
+      "image3.webp"
+    ]
   },
   {
     "id": 2,
@@ -33,11 +48,26 @@
     "lat": 34.0522,
     "lng": -118.2437,
     "reviews": [
-      { "id": 1, "reviewername": "Mike Johnson", "reviewstars": 5, "reviewtext": "Absolutely stunning views and perfect location!", "reviewdate": "2024-03-10" },
-      { "id": 2, "reviewername": "Sarah Williams", "reviewstars": 4.5, "reviewtext": "Beautiful condo, very spacious and modern.", "reviewdate": "2024-03-25" }
+      {
+        "id": 1,
+        "reviewername": "Mike Johnson",
+        "reviewstars": 5,
+        "reviewtext": "Absolutely stunning views and perfect location!",
+        "reviewdate": "2024-03-10"
+      },
+      {
+        "id": 2,
+        "reviewername": "Sarah Williams",
+        "reviewstars": 4.5,
+        "reviewtext": "Beautiful condo, very spacious and modern.",
+        "reviewdate": "2024-03-25"
+      }
     ],
-    "images": ["image.png", "image2.webp", "image3.webp"]
-
+    "images": [
+      "image.png",
+      "image2.webp",
+      "image3.webp"
+    ]
   },
   {
     "id": 3,
@@ -53,9 +83,200 @@
     "lat": 40.7128,
     "lng": -74.0060,
     "reviews": [
-      { "id": 1, "reviewername": "Tom Brown", "reviewstars": 4, "reviewtext": "Good value for money, clean and comfortable.", "reviewdate": "2024-04-05" },
-      { "id": 2, "reviewername": "Emily Davis", "reviewstars": 4.5, "reviewtext": "Perfect for a short stay, very convenient location.", "reviewdate": "2024-04-12" }
+      {
+        "id": 1,
+        "reviewername": "Tom Brown",
+        "reviewstars": 4,
+        "reviewtext": "Good value for money, clean and comfortable.",
+        "reviewdate": "2024-04-05"
+      },
+      {
+        "id": 2,
+        "reviewername": "Emily Davis",
+        "reviewstars": 4.5,
+        "reviewtext": "Perfect for a short stay, very convenient location.",
+        "reviewdate": "2024-04-12"
+      }
     ],
-    "images": ["image.png", "image2.webp", "image3.webp"]
+    "images": [
+      "image.png",
+      "image2.webp",
+      "image3.webp"
+    ]
+  },
+  {
+    "id": 4,
+    "city": "Miami",
+    "price": 320,
+    "days": 4,
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+    "rating": 4.7,
+    "homename": "Beachfront Villa in Miami",
+    "description": "Stunning beachfront villa with direct ocean access, private pool, and breathtaking sunrise views.",
+    "rooms": 4,
+    "maxGuests": 8,
+    "lat": 25.7617,
+    "lng": -80.1918,
+    "reviews": [
+      {
+        "id": 1,
+        "reviewername": "Carlos Mendez",
+        "reviewstars": 5,
+        "reviewtext": "Waking up to ocean views every morning was incredible. Perfect villa!",
+        "reviewdate": "2024-05-02"
+      },
+      {
+        "id": 2,
+        "reviewername": "Lisa Park",
+        "reviewstars": 4.5,
+        "reviewtext": "Amazing pool and beach access. Kids loved it!",
+        "reviewdate": "2024-05-18"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800"
+    ]
+  },
+  {
+    "id": 5,
+    "city": "Chicago",
+    "price": 180,
+    "days": 2,
+    "image": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=800",
+    "rating": 4.4,
+    "homename": "Modern Loft in Chicago",
+    "description": "Stylish industrial loft in the heart of Chicago, walking distance to top restaurants and museums.",
+    "rooms": 2,
+    "maxGuests": 4,
+    "lat": 41.8781,
+    "lng": -87.6298,
+    "reviews": [
+      {
+        "id": 1,
+        "reviewername": "David Kim",
+        "reviewstars": 4,
+        "reviewtext": "Fantastic loft with great city vibes. Very well equipped kitchen.",
+        "reviewdate": "2024-06-08"
+      },
+      {
+        "id": 2,
+        "reviewername": "Anna Müller",
+        "reviewstars": 5,
+        "reviewtext": "Loved the exposed brick and high ceilings. Super central location.",
+        "reviewdate": "2024-06-21"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=800",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800"
+    ]
+  },
+  {
+    "id": 6,
+    "city": "San Francisco",
+    "price": 275,
+    "days": 3,
+    "image": "https://imgs.search.brave.com/ty0blA0N6a8qzU0Ki5xYgCw3s_tmPyhDuwG2ooy9Apo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTY4/NzI1NTE3OC9waG90/by9yb3ctb2Ytc2lu/Z2xlLWZhbWlseS1o/b21lcy5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9OFF1T2pV/cDdxd1Z5eEdoUDVn/U2tCT2dPQ25ZOGZJ/ckpLOWdoYWpBYVpv/bz0",
+    "rating": 4.6,
+    "homename": "Victorian House in San Francisco",
+    "description": "Charming Victorian home in the famous Painted Ladies row, with stunning Golden Gate Bridge views.",
+    "rooms": 3,
+    "maxGuests": 6,
+    "lat": 37.7749,
+    "lng": -122.4194,
+    "reviews": [
+      {
+        "id": 1,
+        "reviewername": "Rachel Green",
+        "reviewstars": 5,
+        "reviewtext": "The most beautiful house I have ever stayed in. Full House vibes!",
+        "reviewdate": "2024-07-04"
+      },
+      {
+        "id": 2,
+        "reviewername": "James Wu",
+        "reviewstars": 4.5,
+        "reviewtext": "Gorgeous architecture, great neighborhood, easy parking.",
+        "reviewdate": "2024-07-19"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1518791841217-8f162f1912da?w=800",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800"
+    ]
+  },
+  {
+    "id": 7,
+    "city": "San Francisco",
+    "price": 275,
+    "days": 3,
+    "image": "https://imgs.search.brave.com/ty0blA0N6a8qzU0Ki5xYgCw3s_tmPyhDuwG2ooy9Apo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTY4/NzI1NTE3OC9waG90/by9yb3ctb2Ytc2lu/Z2xlLWZhbWlseS1o/b21lcy5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9OFF1T2pV/cDdxd1Z5eEdoUDVn/U2tCT2dPQ25ZOGZJ/ckpLOWdoYWpBYVpv/bz0",
+    "rating": 4.6,
+    "homename": "Victorian House in San Francisco",
+    "description": "Charming Victorian home in the famous Painted Ladies row, with stunning Golden Gate Bridge views.",
+    "rooms": 3,
+    "maxGuests": 6,
+    "lat": 37.7749,
+    "lng": -122.4194,
+    "reviews": [
+      {
+        "id": 1,
+        "reviewername": "Rachel Green",
+        "reviewstars": 5,
+        "reviewtext": "The most beautiful house I have ever stayed in. Full House vibes!",
+        "reviewdate": "2024-07-04"
+      },
+      {
+        "id": 2,
+        "reviewername": "James Wu",
+        "reviewstars": 4.5,
+        "reviewtext": "Gorgeous architecture, great neighborhood, easy parking.",
+        "reviewdate": "2024-07-19"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1518791841217-8f162f1912da?w=800",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800"
+    ]
+  },  
+  {
+    "id": 8,
+    "city": "San Francisco",
+    "price": 275,
+    "days": 3,
+    "image": "https://imgs.search.brave.com/ty0blA0N6a8qzU0Ki5xYgCw3s_tmPyhDuwG2ooy9Apo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTY4/NzI1NTE3OC9waG90/by9yb3ctb2Ytc2lu/Z2xlLWZhbWlseS1o/b21lcy5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9OFF1T2pV/cDdxd1Z5eEdoUDVn/U2tCT2dPQ25ZOGZJ/ckpLOWdoYWpBYVpv/bz0",
+    "rating": 4.6,
+    "homename": "Victorian House in San Francisco",
+    "description": "Charming Victorian home in the famous Painted Ladies row, with stunning Golden Gate Bridge views.",
+    "rooms": 3,
+    "maxGuests": 6,
+    "lat": 37.7749,
+    "lng": -122.4194,
+    "reviews": [
+      {
+        "id": 1,
+        "reviewername": "Rachel Green",
+        "reviewstars": 5,
+        "reviewtext": "The most beautiful house I have ever stayed in. Full House vibes!",
+        "reviewdate": "2024-07-04"
+      },
+      {
+        "id": 2,
+        "reviewername": "James Wu",
+        "reviewstars": 4.5,
+        "reviewtext": "Gorgeous architecture, great neighborhood, easy parking.",
+        "reviewdate": "2024-07-19"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1518791841217-8f162f1912da?w=800",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800"
+    ]
   }
 ]
