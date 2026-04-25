@@ -1,18 +1,18 @@
 "use client";
-import {createContext, useContext, useState} from "react";
+import { createContext, useContext, useState } from "react";
 
 
 const WishlistContext = createContext({
     wishlist: [] as number[],
-    addToWishlist: (id: number) => {},
-    removeFromWishlist: (id: number) => {},
+    addToWishlist: (id: number) => { },
+    removeFromWishlist: (id: number) => { },
 });
 
 export function WishlistProvider({ children }: { children: React.ReactNode }) {
     const [wishlist, setWishlist] = useState<number[]>([]);
 
     const addToWishlist = (id: number) => {
-        setWishlist((prev) => [...prev, id]);
+        setWishlist((prev) => (prev.includes(id) ? prev : [...prev, id]));
     }
 
     const removeFromWishlist = (id: number) => {

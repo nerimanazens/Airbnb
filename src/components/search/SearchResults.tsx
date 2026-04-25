@@ -18,7 +18,7 @@ export default function SearchResults() {
   }, [minPrice, maxPrice, rooms]);
 
   if (filteredProperties.length === 0) {
-    return <p>No results found</p>;
+    return <p className="text-center mx-auto text-xl mt-4">No results found</p>;
   }
 
   return (

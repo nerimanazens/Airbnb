@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import { useSearch } from "@/context/SearchContext";
-
+import { useTheme } from "@/context/ThemeContext";
 export default function SearchFilters() {
     const { minPrice, maxPrice, rooms, setMinPrice, setMaxPrice, setRooms } = useSearch();
+    const { theme } = useTheme();
     return (
         <div className="flex mx-auto w-270 gap-3 items-center  ">
 
