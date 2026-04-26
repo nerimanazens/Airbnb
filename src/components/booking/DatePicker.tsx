@@ -1,10 +1,10 @@
-
+"use client";
 import { useBooking } from "@/context/BookingContext";
 
-export default function DataPicker() {
+export default function DatePicker() {
     const { checkIn, checkOut, setCheckIn, setCheckOut } = useBooking();
     return (
-        <form className="flex flex-col">
+        <form className="flex flex-col mx-auto">
             <label>Check-in:</label>
             <input className="border border-gray-300 rounded py-2 px-4" type="date" value={checkIn} onChange={(e) => setCheckIn(e.target.value)} />
             <label>Check-out:</label>

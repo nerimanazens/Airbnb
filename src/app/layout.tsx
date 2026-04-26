@@ -22,7 +22,7 @@ export default function RootLayout({
       lang="en"
       className="h-full antialiased"
     >
-      <body className="min-h-full flex flex-col bg-slate-50 text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
+      <body suppressHydrationWarning className="min-h-full flex flex-col bg-white text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
         <ThemeProvider>
           <WishlistProvider>
             <SearchProvider>
@@ -33,7 +33,7 @@ export default function RootLayout({
             </SearchProvider>
           </WishlistProvider>
         </ThemeProvider>
-      </body> 
+      </body>
 
     </html>
   );

@@ -1,5 +1,6 @@
 "use client";
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext } from "react";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
 
 
 const WishlistContext = createContext({
@@ -9,7 +10,7 @@ const WishlistContext = createContext({
 });
 
 export function WishlistProvider({ children }: { children: React.ReactNode }) {
-    const [wishlist, setWishlist] = useState<number[]>([]);
+    const [wishlist, setWishlist] = useLocalStorage<number[]>("wishlist", []);
 
     const addToWishlist = (id: number) => {
         setWishlist((prev) => (prev.includes(id) ? prev : [...prev, id]));
